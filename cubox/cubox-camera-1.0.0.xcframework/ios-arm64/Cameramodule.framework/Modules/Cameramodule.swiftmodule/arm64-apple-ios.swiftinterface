@@ -1,0 +1,163 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Cameramodule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AVFoundation
+@_exported import Cameramodule
+import Combine
+import DeveloperToolsSupport
+import Dlite
+import Foundation
+import ImageIO
+import Inferencemodule
+import Photos
+import Swift
+import SwiftUI
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum CameraResult {
+  case result(succeedStatus: Cameramodule.SucceedStatus, image: UIKit.UIImage? = nil, faceId: Swift.String? = nil)
+  case error(errorStatus: Dlite.DliteRequestErrorStatus, errorMessage: Swift.String? = nil, exception: (any Swift.Error)? = nil)
+}
+public enum CameraMode {
+  case faceRecognition(option: Cameramodule.FaceRecognitionOption)
+  case liveCapture(option: Cameramodule.LiveCaptureOption)
+  case liveness(option: Cameramodule.LivenessOption)
+}
+@_Concurrency.MainActor @preconcurrency public struct CameraView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(mode: Cameramodule.CameraMode, onComplete: @escaping (Cameramodule.CameraResult) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12Cameramodule10CameraViewV4bodyQrvp", 0) __
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class CameraHostingViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor @preconcurrency public init(faceId: Swift.String = "", isRegistration: Swift.Bool = false, completion: @escaping ([Swift.String : Any]) -> Swift.Void)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class BaseCameraViewModel : ObjectiveC.NSObject, Combine.ObservableObject {
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension Cameramodule.BaseCameraViewModel : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @objc dynamic public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+extension SwiftUICore.EnvironmentValues {
+  public var safeAreaInsets: SwiftUICore.EdgeInsets {
+    get
+  }
+}
+extension UIKit.UIEdgeInsets {
+  public var insets: SwiftUICore.EdgeInsets {
+    get
+  }
+}
+public struct SafeAreaInsetsKey : SwiftUICore.EnvironmentKey {
+  public static var defaultValue: SwiftUICore.EdgeInsets {
+    get
+  }
+  public typealias Value = SwiftUICore.EdgeInsets
+}
+public struct ShareableResult {
+  public var isDetectMask: Swift.Bool
+  public var isClosedEyes: Swift.Bool
+  public var isFaceFullyVisible: Swift.Bool
+  public var isFacePreviewIn: Swift.Bool
+  public var isFaceCenterVisible: Swift.Bool
+  public var faceCount: Swift.Int
+  public var frontalPassPercentage: Swift.Double
+}
+public struct FaceRecognitionOption {
+  public var faceId: Swift.String
+  public var frontalPassedFrameCount: Swift.Int
+  public var isCheckValidation: Swift.Bool
+  public init(faceId: Swift.String = "", frontalPassedFrameCount: Swift.Int = 20, isCheckValidation: Swift.Bool = false)
+}
+public enum LivenessAction : Swift.String {
+  case frontal
+  case raise, bending
+  case turn_right, turn_left
+  case tilt_right, tilt_left
+  case open_mouth, smile
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SDKLanguage : Swift.String {
+  case KOREA
+  case ENGLISH
+  case LAOS
+  case VIETNAM
+  public var orderMessage: [Cameramodule.LivenessAction : Swift.String] {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct SmartCaptureView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(option: Cameramodule.LiveCaptureOption, startRightAway: Swift.Bool = true, onFrameState: @escaping (Cameramodule.ShareableResult) -> Swift.Void, onCaptureResult: @escaping (Cameramodule.CameraResult) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func start()
+  @_Concurrency.MainActor @preconcurrency public func pause()
+  @_Concurrency.MainActor @preconcurrency public func resume()
+  @_Concurrency.MainActor @preconcurrency public func release()
+  public typealias Body = @_opaqueReturnTypeOf("$s12Cameramodule16SmartCaptureViewV4bodyQrvp", 0) __
+}
+public struct LivenessOption {
+  public enum PassCount : Swift.Int {
+    case TWO
+    case THREE
+    case FOUR
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public var languages: [Cameramodule.LivenessAction : Swift.String]
+  public var frontalPassedFrameCount: Swift.Int
+  public var frontalDetectionTime: Swift.Double
+  public var detectionTime: Swift.Double
+  public var passCount: Cameramodule.LivenessOption.PassCount
+  public var foregroundColor: SwiftUICore.Color
+  public var logo: UIKit.UIImage?
+  public init(language: Cameramodule.SDKLanguage = .ENGLISH, customLanguages: [Cameramodule.LivenessAction : Swift.String] = [:], frontalPassedFrameCount: Swift.Int = 20, frontalDetectionTime: Swift.Double = 10.0, detectionTime: Swift.Double = 5.0, passCount: Cameramodule.LivenessOption.PassCount = .TWO, foregroundColor: SwiftUICore.Color? = nil, logo: UIKit.UIImage? = nil)
+}
+public struct LiveCaptureOption {
+  public var frontalPassedFrameCount: Swift.Int
+  public init(frontalPassedFrameCount: Swift.Int = 20)
+}
+public enum SucceedStatus {
+  case COMPLETED_FRONTAL_CAPTURE
+  case COMPLETED_LIVENESS
+  case COMPLETED_FACE_REGISTER
+  case COMPLETED_FACE_VERIFICATION
+  public static func == (a: Cameramodule.SucceedStatus, b: Cameramodule.SucceedStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Cameramodule.CameraView : Swift.Sendable {}
+extension Cameramodule.LivenessAction : Swift.Equatable {}
+extension Cameramodule.LivenessAction : Swift.Hashable {}
+extension Cameramodule.LivenessAction : Swift.RawRepresentable {}
+extension Cameramodule.SDKLanguage : Swift.Equatable {}
+extension Cameramodule.SDKLanguage : Swift.Hashable {}
+extension Cameramodule.SDKLanguage : Swift.RawRepresentable {}
+extension Cameramodule.SmartCaptureView : Swift.Sendable {}
+extension Cameramodule.LivenessOption.PassCount : Swift.Equatable {}
+extension Cameramodule.LivenessOption.PassCount : Swift.Hashable {}
+extension Cameramodule.LivenessOption.PassCount : Swift.RawRepresentable {}
+extension Cameramodule.SucceedStatus : Swift.Equatable {}
+extension Cameramodule.SucceedStatus : Swift.Hashable {}

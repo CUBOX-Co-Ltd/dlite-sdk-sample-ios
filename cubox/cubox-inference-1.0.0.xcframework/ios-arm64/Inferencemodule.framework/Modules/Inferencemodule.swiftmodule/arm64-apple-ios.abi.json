@@ -1,0 +1,2876 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "Inferencemodule",
+    "printedName": "Inferencemodule",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceAnalyzer",
+        "printedName": "FaceAnalyzer",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frontalPassedFrameCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceAnalyzer",
+                "printedName": "Inferencemodule.FaceAnalyzer",
+                "usr": "s:15Inferencemodule12FaceAnalyzerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inferencemodule12FaceAnalyzerC23frontalPassedFrameCountACSi_tcfc",
+            "mangledName": "$s15Inferencemodule12FaceAnalyzerC23frontalPassedFrameCountACSi_tcfc",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "updatePreviewSize",
+            "printedName": "updatePreviewSize(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule12FaceAnalyzerC17updatePreviewSizeyySo6CGSizeVF",
+            "mangledName": "$s15Inferencemodule12FaceAnalyzerC17updatePreviewSizeyySo6CGSizeVF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getResultPublisher",
+            "printedName": "getResultPublisher()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Inferencemodule.FaceAnalysisResult, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FaceAnalysisResult",
+                    "printedName": "Inferencemodule.FaceAnalysisResult",
+                    "usr": "s:15Inferencemodule18FaceAnalysisResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule12FaceAnalyzerC18getResultPublisher7Combine03AnyF0VyAA0b8AnalysisE0Vs5NeverOGyF",
+            "mangledName": "$s15Inferencemodule12FaceAnalyzerC18getResultPublisher7Combine03AnyF0VyAA0b8AnalysisE0Vs5NeverOGyF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "analyze",
+            "printedName": "analyze(buffer:orientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CVBuffer",
+                "printedName": "CoreVideo.CVBuffer",
+                "usr": "c:@T@CVBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImagePropertyOrientation",
+                "printedName": "ImageIO.CGImagePropertyOrientation",
+                "hasDefaultArg": true,
+                "usr": "c:@E@CGImagePropertyOrientation"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule12FaceAnalyzerC7analyze6buffer11orientationySo11CVBufferRefa_So26CGImagePropertyOrientationVtF",
+            "mangledName": "$s15Inferencemodule12FaceAnalyzerC7analyze6buffer11orientationySo11CVBufferRefa_So26CGImagePropertyOrientationVtF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setFrontalPassedFrameCount",
+            "printedName": "setFrontalPassedFrameCount(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule12FaceAnalyzerC26setFrontalPassedFrameCountyySiF",
+            "mangledName": "$s15Inferencemodule12FaceAnalyzerC26setFrontalPassedFrameCountyySiF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "restartFrontalDetect",
+            "printedName": "restartFrontalDetect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule12FaceAnalyzerC20restartFrontalDetectyyF",
+            "mangledName": "$s15Inferencemodule12FaceAnalyzerC20restartFrontalDetectyyF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15Inferencemodule12FaceAnalyzerC",
+        "mangledName": "$s15Inferencemodule12FaceAnalyzerC",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InferenceProtocol",
+        "printedName": "InferenceProtocol",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "OutputType",
+            "printedName": "OutputType",
+            "declKind": "AssociatedType",
+            "usr": "s:15Inferencemodule17InferenceProtocolP10OutputTypeQa",
+            "mangledName": "$s15Inferencemodule17InferenceProtocolP10OutputTypeQa",
+            "moduleName": "Inferencemodule",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Inferencemodule.ModelEngineErrorStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModelEngineErrorStatus",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                    "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule17InferenceProtocolP6statusAA22ModelEngineErrorStatusOSgvp",
+            "mangledName": "$s15Inferencemodule17InferenceProtocolP6statusAA22ModelEngineErrorStatusOSgvp",
+            "moduleName": "Inferencemodule",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModelEngineErrorStatus",
+                        "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                        "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule17InferenceProtocolP6statusAA22ModelEngineErrorStatusOSgvg",
+                "mangledName": "$s15Inferencemodule17InferenceProtocolP6statusAA22ModelEngineErrorStatusOSgvg",
+                "moduleName": "Inferencemodule",
+                "genericSig": "<τ_0_0 where τ_0_0 : Inferencemodule.InferenceProtocol>",
+                "sugared_genericSig": "<Self where Self : Inferencemodule.InferenceProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModelEngineErrorStatus",
+                        "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                        "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule17InferenceProtocolP6statusAA22ModelEngineErrorStatusOSgvs",
+                "mangledName": "$s15Inferencemodule17InferenceProtocolP6statusAA22ModelEngineErrorStatusOSgvs",
+                "moduleName": "Inferencemodule",
+                "genericSig": "<τ_0_0 where τ_0_0 : Inferencemodule.InferenceProtocol>",
+                "sugared_genericSig": "<Self where Self : Inferencemodule.InferenceProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule17InferenceProtocolP6statusAA22ModelEngineErrorStatusOSgvM",
+                "mangledName": "$s15Inferencemodule17InferenceProtocolP6statusAA22ModelEngineErrorStatusOSgvM",
+                "moduleName": "Inferencemodule",
+                "genericSig": "<τ_0_0 where τ_0_0 : Inferencemodule.InferenceProtocol>",
+                "sugared_genericSig": "<Self where Self : Inferencemodule.InferenceProtocol>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "requestInference",
+            "printedName": "requestInference(input:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.OutputType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule17InferenceProtocolP07requestB05input10OutputTypeQzSo7UIImageC_tF",
+            "mangledName": "$s15Inferencemodule17InferenceProtocolP07requestB05input10OutputTypeQzSo7UIImageC_tF",
+            "moduleName": "Inferencemodule",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inferencemodule.InferenceProtocol>",
+            "sugared_genericSig": "<Self where Self : Inferencemodule.InferenceProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15Inferencemodule17InferenceProtocolP",
+        "mangledName": "$s15Inferencemodule17InferenceProtocolP",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ModelEngine",
+        "printedName": "ModelEngine",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(type:name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModelEngine",
+                "printedName": "Inferencemodule.ModelEngine",
+                "usr": "c:@M@Inferencemodule@objc(cs)ModelEngine"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inferencemodule11ModelEngineC4type4nameACSS_SStcfc",
+            "mangledName": "$s15Inferencemodule11ModelEngineC4type4nameACSS_SStcfc",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "modelInitialize",
+            "printedName": "modelInitialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreML.MLModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MLModel",
+                    "printedName": "CoreML.MLModel",
+                    "usr": "c:objc(cs)MLModel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule11ModelEngineC15modelInitializeSo7MLModelCSgyKF",
+            "mangledName": "$s15Inferencemodule11ModelEngineC15modelInitializeSo7MLModelCSgyKF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModelEngine",
+                "printedName": "Inferencemodule.ModelEngine",
+                "usr": "c:@M@Inferencemodule@objc(cs)ModelEngine"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Inferencemodule@objc(cs)ModelEngine(im)init",
+            "mangledName": "$s15Inferencemodule11ModelEngineCACycfc",
+            "moduleName": "Inferencemodule",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Inferencemodule@objc(cs)ModelEngine",
+        "mangledName": "$s15Inferencemodule11ModelEngineC",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)MLModel",
+        "superclassNames": [
+          "CoreML.MLModel",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CoreInterface",
+        "printedName": "CoreInterface",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "detectFace",
+            "printedName": "detectFace(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[(CoreFoundation.CGRect, [CoreFoundation.CGPoint])]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[(CoreFoundation.CGRect, [CoreFoundation.CGPoint])]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(CoreFoundation.CGRect, [CoreFoundation.CGPoint])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGRect",
+                            "printedName": "CoreFoundation.CGRect",
+                            "usr": "c:@S@CGRect"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[CoreFoundation.CGPoint]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CGPoint",
+                                "printedName": "CoreFoundation.CGPoint",
+                                "usr": "c:@S@CGPoint"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule13CoreInterfaceP10detectFace5imageSaySo6CGRectV_SaySo7CGPointVGtGSgSo7UIImageC_tF",
+            "mangledName": "$s15Inferencemodule13CoreInterfaceP10detectFace5imageSaySo6CGRectV_SaySo7CGPointVGtGSgSo7UIImageC_tF",
+            "moduleName": "Inferencemodule",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inferencemodule.CoreInterface>",
+            "sugared_genericSig": "<Self where Self : Inferencemodule.CoreInterface>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "extractFeature",
+            "printedName": "extractFeature(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Float]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule13CoreInterfaceP14extractFeature5imageSaySfGSgSo7UIImageC_tF",
+            "mangledName": "$s15Inferencemodule13CoreInterfaceP14extractFeature5imageSaySfGSgSo7UIImageC_tF",
+            "moduleName": "Inferencemodule",
+            "genericSig": "<τ_0_0 where τ_0_0 : Inferencemodule.CoreInterface>",
+            "sugared_genericSig": "<Self where Self : Inferencemodule.CoreInterface>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15Inferencemodule13CoreInterfaceP",
+        "mangledName": "$s15Inferencemodule13CoreInterfaceP",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CuCoreModule",
+        "printedName": "CuCoreModule",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CuCoreModule",
+                "printedName": "Inferencemodule.CuCoreModule",
+                "usr": "s:15Inferencemodule12CuCoreModuleC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inferencemodule12CuCoreModuleCACycfc",
+            "mangledName": "$s15Inferencemodule12CuCoreModuleCACycfc",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "detectFace",
+            "printedName": "detectFace(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[(CoreFoundation.CGRect, [CoreFoundation.CGPoint])]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[(CoreFoundation.CGRect, [CoreFoundation.CGPoint])]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(CoreFoundation.CGRect, [CoreFoundation.CGPoint])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGRect",
+                            "printedName": "CoreFoundation.CGRect",
+                            "usr": "c:@S@CGRect"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[CoreFoundation.CGPoint]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CGPoint",
+                                "printedName": "CoreFoundation.CGPoint",
+                                "usr": "c:@S@CGPoint"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule12CuCoreModuleC10detectFace5imageSaySo6CGRectV_SaySo7CGPointVGtGSgSo7UIImageC_tF",
+            "mangledName": "$s15Inferencemodule12CuCoreModuleC10detectFace5imageSaySo6CGRectV_SaySo7CGPointVGtGSgSo7UIImageC_tF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "extractFeature",
+            "printedName": "extractFeature(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Float]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule12CuCoreModuleC14extractFeature5imageSaySfGSgSo7UIImageC_tF",
+            "mangledName": "$s15Inferencemodule12CuCoreModuleC14extractFeature5imageSaySfGSgSo7UIImageC_tF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15Inferencemodule12CuCoreModuleC",
+        "mangledName": "$s15Inferencemodule12CuCoreModuleC",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CoreInterface",
+            "printedName": "CoreInterface",
+            "usr": "s:15Inferencemodule13CoreInterfaceP",
+            "mangledName": "$s15Inferencemodule13CoreInterfaceP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceAnalysisResult",
+        "printedName": "FaceAnalysisResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "faceDetected",
+            "printedName": "faceDetected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV12faceDetectedSbvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV12faceDetectedSbvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV12faceDetectedSbvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV12faceDetectedSbvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "frontalImage",
+            "printedName": "frontalImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV12frontalImageSo7UIImageCSgvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV12frontalImageSo7UIImageCSgvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV12frontalImageSo7UIImageCSgvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV12frontalImageSo7UIImageCSgvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceCount",
+            "printedName": "faceCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV9faceCountSivp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV9faceCountSivp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV9faceCountSivg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV9faceCountSivg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "firstFace",
+            "printedName": "firstFace",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Vision.VNFaceObservation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VNFaceObservation",
+                    "printedName": "Vision.VNFaceObservation",
+                    "usr": "c:objc(cs)VNFaceObservation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV05firstB0So17VNFaceObservationCSgvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV05firstB0So17VNFaceObservationCSgvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Vision.VNFaceObservation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VNFaceObservation",
+                        "printedName": "Vision.VNFaceObservation",
+                        "usr": "c:objc(cs)VNFaceObservation"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV05firstB0So17VNFaceObservationCSgvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV05firstB0So17VNFaceObservationCSgvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isFaceFullyVisible",
+            "printedName": "isFaceFullyVisible",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV02isB12FullyVisibleSbvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV02isB12FullyVisibleSbvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV02isB12FullyVisibleSbvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV02isB12FullyVisibleSbvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isFacePreviewIn",
+            "printedName": "isFacePreviewIn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV02isB9PreviewInSbvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV02isB9PreviewInSbvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV02isB9PreviewInSbvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV02isB9PreviewInSbvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isFaceCenterVisible",
+            "printedName": "isFaceCenterVisible",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV02isB13CenterVisibleSbvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV02isB13CenterVisibleSbvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV02isB13CenterVisibleSbvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV02isB13CenterVisibleSbvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isDetectMask",
+            "printedName": "isDetectMask",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV12isDetectMaskSbvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV12isDetectMaskSbvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV12isDetectMaskSbvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV12isDetectMaskSbvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isClosedEyes",
+            "printedName": "isClosedEyes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV12isClosedEyesSbvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV12isClosedEyesSbvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV12isClosedEyesSbvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV12isClosedEyesSbvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "frontalPassPercentage",
+            "printedName": "frontalPassPercentage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV21frontalPassPercentageSdvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV21frontalPassPercentageSdvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV21frontalPassPercentageSdvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV21frontalPassPercentageSdvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceQualityScore",
+            "printedName": "faceQualityScore",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV16faceQualityScoreSfvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV16faceQualityScoreSfvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV16faceQualityScoreSfvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV16faceQualityScoreSfvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV5errors5Error_pSgvp",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV5errors5Error_pSgvp",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV5errors5Error_pSgvg",
+                "mangledName": "$s15Inferencemodule18FaceAnalysisResultV5errors5Error_pSgvg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(faceDetected:frontalImage:faceCount:firstFace:isFaceFullyVisible:isFacePreviewIn:isFaceCenterVisible:isDetectMask:isClosedEyes:frontalPassPercentage:faceQualityScore:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceAnalysisResult",
+                "printedName": "Inferencemodule.FaceAnalysisResult",
+                "usr": "s:15Inferencemodule18FaceAnalysisResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Vision.VNFaceObservation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VNFaceObservation",
+                    "printedName": "Vision.VNFaceObservation",
+                    "usr": "c:objc(cs)VNFaceObservation"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inferencemodule18FaceAnalysisResultV12faceDetected12frontalImage0E5Count05firstB002isB12FullyVisible0kB9PreviewIn0kb6CenterM00K10DetectMask0K10ClosedEyes0G14PassPercentage0E12QualityScore5errorACSb_So7UIImageCSgSiSo17VNFaceObservationCSgS5bSdSfs5Error_pSgtcfc",
+            "mangledName": "$s15Inferencemodule18FaceAnalysisResultV12faceDetected12frontalImage0E5Count05firstB002isB12FullyVisible0kB9PreviewIn0kb6CenterM00K10DetectMask0K10ClosedEyes0G14PassPercentage0E12QualityScore5errorACSb_So7UIImageCSgSiSo17VNFaceObservationCSgS5bSdSfs5Error_pSgtcfc",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15Inferencemodule18FaceAnalysisResultV",
+        "mangledName": "$s15Inferencemodule18FaceAnalysisResultV",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OutputFloat",
+        "printedName": "OutputFloat",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "featureNames",
+            "printedName": "featureNames",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule11OutputFloatC12featureNamesShySSGvp",
+            "mangledName": "$s15Inferencemodule11OutputFloatC12featureNamesShySSGvp",
+            "moduleName": "Inferencemodule",
+            "objc_name": "featureNames",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule11OutputFloatC12featureNamesShySSGvg",
+                "mangledName": "$s15Inferencemodule11OutputFloatC12featureNamesShySSGvg",
+                "moduleName": "Inferencemodule",
+                "objc_name": "featureNames",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "featureValue",
+            "printedName": "featureValue(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreML.MLFeatureValue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MLFeatureValue",
+                    "printedName": "CoreML.MLFeatureValue",
+                    "usr": "c:objc(cs)MLFeatureValue"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule11OutputFloatC12featureValue3forSo09MLFeatureE0CSgSS_tF",
+            "mangledName": "$s15Inferencemodule11OutputFloatC12featureValue3forSo09MLFeatureE0CSgSS_tF",
+            "moduleName": "Inferencemodule",
+            "objc_name": "featureValueForName:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(var_output:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OutputFloat",
+                "printedName": "Inferencemodule.OutputFloat",
+                "usr": "s:15Inferencemodule11OutputFloatC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MLMultiArray",
+                "printedName": "CoreML.MLMultiArray",
+                "usr": "c:objc(cs)MLMultiArray"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inferencemodule11OutputFloatC10var_outputACSo12MLMultiArrayC_tcfc",
+            "mangledName": "$s15Inferencemodule11OutputFloatC10var_outputACSo12MLMultiArrayC_tcfc",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(features:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OutputFloat",
+                "printedName": "Inferencemodule.OutputFloat",
+                "usr": "s:15Inferencemodule11OutputFloatC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MLFeatureProvider",
+                "printedName": "any CoreML.MLFeatureProvider",
+                "usr": "c:objc(pl)MLFeatureProvider"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inferencemodule11OutputFloatC8featuresACSo17MLFeatureProvider_p_tcfc",
+            "mangledName": "$s15Inferencemodule11OutputFloatC8featuresACSo17MLFeatureProvider_p_tcfc",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15Inferencemodule11OutputFloatC",
+        "mangledName": "$s15Inferencemodule11OutputFloatC",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceUtils",
+        "printedName": "FaceUtils",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceUtils",
+                "printedName": "Inferencemodule.FaceUtils",
+                "usr": "s:15Inferencemodule9FaceUtilsC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inferencemodule9FaceUtilsCACycfc",
+            "mangledName": "$s15Inferencemodule9FaceUtilsCACycfc",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "faceAlignment",
+            "printedName": "faceAlignment(image:faceObjectInfo:padRate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(boundingBox: CoreFoundation.CGRect, keyPoints: [CoreFoundation.CGPoint])",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreFoundation.CGPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGPoint",
+                        "printedName": "CoreFoundation.CGPoint",
+                        "usr": "c:@S@CGPoint"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule9FaceUtilsC13faceAlignment5image0D10ObjectInfo7padRateSo7UIImageCSgAI_So6CGRectV11boundingBox_SaySo7CGPointVG9keyPointstSftF",
+            "mangledName": "$s15Inferencemodule9FaceUtilsC13faceAlignment5image0D10ObjectInfo7padRateSo7UIImageCSgAI_So6CGRectV11boundingBox_SaySo7CGPointVG9keyPointstSftF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15Inferencemodule9FaceUtilsC",
+        "mangledName": "$s15Inferencemodule9FaceUtilsC",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ModelEngineErrorStatus",
+        "printedName": "ModelEngineErrorStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "moduleFrameworkNotFound",
+            "printedName": "moduleFrameworkNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Inferencemodule.ModelEngineErrorStatus.Type) -> Inferencemodule.ModelEngineErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModelEngineErrorStatus",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                    "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModelEngineErrorStatus",
+                        "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                        "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Inferencemodule22ModelEngineErrorStatusO23moduleFrameworkNotFoundyA2CmF",
+            "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO23moduleFrameworkNotFoundyA2CmF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "modelFileNotFound",
+            "printedName": "modelFileNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Inferencemodule.ModelEngineErrorStatus.Type) -> Inferencemodule.ModelEngineErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModelEngineErrorStatus",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                    "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModelEngineErrorStatus",
+                        "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                        "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Inferencemodule22ModelEngineErrorStatusO17modelFileNotFoundyA2CmF",
+            "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO17modelFileNotFoundyA2CmF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "decryptFailed",
+            "printedName": "decryptFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Inferencemodule.ModelEngineErrorStatus.Type) -> Inferencemodule.ModelEngineErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModelEngineErrorStatus",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                    "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModelEngineErrorStatus",
+                        "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                        "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Inferencemodule22ModelEngineErrorStatusO13decryptFailedyA2CmF",
+            "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO13decryptFailedyA2CmF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loadFailed",
+            "printedName": "loadFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Inferencemodule.ModelEngineErrorStatus.Type) -> Inferencemodule.ModelEngineErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModelEngineErrorStatus",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                    "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModelEngineErrorStatus",
+                        "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                        "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Inferencemodule22ModelEngineErrorStatusO10loadFailedyA2CmF",
+            "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO10loadFailedyA2CmF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknownError",
+            "printedName": "unknownError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Inferencemodule.ModelEngineErrorStatus.Type) -> Inferencemodule.ModelEngineErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModelEngineErrorStatus",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                    "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Inferencemodule.ModelEngineErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModelEngineErrorStatus",
+                        "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                        "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15Inferencemodule22ModelEngineErrorStatusO07unknownD0yA2CmF",
+            "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO07unknownD0yA2CmF",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModelEngineErrorStatus",
+                "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModelEngineErrorStatus",
+                "printedName": "Inferencemodule.ModelEngineErrorStatus",
+                "usr": "s:15Inferencemodule22ModelEngineErrorStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule22ModelEngineErrorStatusO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO2eeoiySbAC_ACtFZ",
+            "moduleName": "Inferencemodule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule22ModelEngineErrorStatusO9hashValueSivp",
+            "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO9hashValueSivp",
+            "moduleName": "Inferencemodule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule22ModelEngineErrorStatusO9hashValueSivg",
+                "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO9hashValueSivg",
+                "moduleName": "Inferencemodule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule22ModelEngineErrorStatusO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO4hash4intoys6HasherVz_tF",
+            "moduleName": "Inferencemodule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15Inferencemodule22ModelEngineErrorStatusO",
+        "mangledName": "$s15Inferencemodule22ModelEngineErrorStatusO",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreML",
+        "printedName": "CoreML",
+        "declKind": "Import",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Input112",
+        "printedName": "Input112",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "featureNames",
+            "printedName": "featureNames",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Inferencemodule8Input112C12featureNamesShySSGvp",
+            "mangledName": "$s15Inferencemodule8Input112C12featureNamesShySSGvp",
+            "moduleName": "Inferencemodule",
+            "objc_name": "featureNames",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Inferencemodule8Input112C12featureNamesShySSGvg",
+                "mangledName": "$s15Inferencemodule8Input112C12featureNamesShySSGvg",
+                "moduleName": "Inferencemodule",
+                "objc_name": "featureNames",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "featureValue",
+            "printedName": "featureValue(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreML.MLFeatureValue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MLFeatureValue",
+                    "printedName": "CoreML.MLFeatureValue",
+                    "usr": "c:objc(cs)MLFeatureValue"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Inferencemodule8Input112C12featureValue3forSo09MLFeatureD0CSgSS_tF",
+            "mangledName": "$s15Inferencemodule8Input112C12featureValue3forSo09MLFeatureD0CSgSS_tF",
+            "moduleName": "Inferencemodule",
+            "objc_name": "featureValueForName:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(input:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Input112",
+                "printedName": "Inferencemodule.Input112",
+                "usr": "s:15Inferencemodule8Input112C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CVBuffer",
+                "printedName": "CoreVideo.CVBuffer",
+                "usr": "c:@T@CVBufferRef"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Inferencemodule8Input112C5inputACSo11CVBufferRefa_tcfc",
+            "mangledName": "$s15Inferencemodule8Input112C5inputACSo11CVBufferRefa_tcfc",
+            "moduleName": "Inferencemodule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15Inferencemodule8Input112C",
+        "mangledName": "$s15Inferencemodule8Input112C",
+        "moduleName": "Inferencemodule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalyzer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 256,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalyzer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalyzer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 439,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalyzer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 480,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalyzer.swift",
+      "kind": "FloatLiteral",
+      "offset": 924,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalyzer.swift",
+      "kind": "FloatLiteral",
+      "offset": 974,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalyzer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1030,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalysisResult.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1040,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalysisResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1110,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalysisResult.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1193,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalysisResult.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1232,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalysisResult.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1275,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalysisResult.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1311,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalysisResult.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1347,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalysisResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1394,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/core\/FaceAnalysisResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1433,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 177,
+      "length": 7,
+      "value": "35.2946"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 189,
+      "length": 7,
+      "value": "51.6963"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 275,
+      "length": 7,
+      "value": "73.5318"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 287,
+      "length": 7,
+      "value": "51.5014"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 379,
+      "length": 7,
+      "value": "56.0252"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 391,
+      "length": 7,
+      "value": "71.7366"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 483,
+      "length": 7,
+      "value": "41.5493"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 495,
+      "length": 7,
+      "value": "92.3655"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 587,
+      "length": 7,
+      "value": "70.7299"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 599,
+      "length": 7,
+      "value": "92.2041"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/FaceUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 1205,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/inferencemodule\/inferencemodule\/util\/AES256.swift",
+      "kind": "Array",
+      "offset": 213,
+      "length": 96,
+      "value": "[0x05, 0x11, 0x16, 0x08, 0x04, 0x21, 0x37, 0x36, 0x18, 0x21, 0x35, 0x04, 0x44, 0x77, 0x40, 0x41]"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module Dlite {
+  umbrella header "dlite.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,99 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Inferencemodule
+import Accelerate
+import Combine
+import CommonCrypto
+import CoreGraphics
+import CoreML
+import CryptoKit
+import Foundation
+@_exported import Inferencemodule
+import Security
+import Swift
+import SwiftUI
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class FaceAnalyzer {
+  public init(frontalPassedFrameCount: Swift.Int = 30)
+  public func updatePreviewSize(_ size: CoreFoundation.CGSize)
+  public func getResultPublisher() -> Combine.AnyPublisher<Inferencemodule.FaceAnalysisResult, Swift.Never>
+  public func analyze(buffer: CoreVideo.CVPixelBuffer, orientation: ImageIO.CGImagePropertyOrientation = .up)
+  public func setFrontalPassedFrameCount(_ count: Swift.Int)
+  public func restartFrontalDetect()
+  @objc deinit
+}
+public protocol InferenceProtocol {
+  associatedtype OutputType
+  var status: Inferencemodule.ModelEngineErrorStatus? { get set }
+  func requestInference(input: UIKit.UIImage) -> Self.OutputType
+}
+@objc final public class ModelEngine : CoreML.MLModel {
+  public init(type: Swift.String, name: Swift.String)
+  final public func modelInitialize() throws -> CoreML.MLModel?
+  @objc deinit
+}
+public protocol CoreInterface {
+  func detectFace(image: UIKit.UIImage) -> [(CoreFoundation.CGRect, [CoreFoundation.CGPoint])]?
+  func extractFeature(image: UIKit.UIImage) -> [Swift.Float]?
+}
+final public class CuCoreModule : Inferencemodule.CoreInterface {
+  public init()
+  final public func detectFace(image: UIKit.UIImage) -> [(CoreFoundation.CGRect, [CoreFoundation.CGPoint])]?
+  final public func extractFeature(image: UIKit.UIImage) -> [Swift.Float]?
+  @objc deinit
+}
+public struct FaceAnalysisResult {
+  public let faceDetected: Swift.Bool
+  public let frontalImage: UIKit.UIImage?
+  public let faceCount: Swift.Int
+  public let firstFace: Vision.VNFaceObservation?
+  public let isFaceFullyVisible: Swift.Bool
+  public let isFacePreviewIn: Swift.Bool
+  public let isFaceCenterVisible: Swift.Bool
+  public let isDetectMask: Swift.Bool
+  public let isClosedEyes: Swift.Bool
+  public let frontalPassPercentage: Swift.Double
+  public let faceQualityScore: Swift.Float
+  public let error: (any Swift.Error)?
+  public init(faceDetected: Swift.Bool = false, frontalImage: UIKit.UIImage? = nil, faceCount: Swift.Int = 0, firstFace: Vision.VNFaceObservation? = nil, isFaceFullyVisible: Swift.Bool = false, isFacePreviewIn: Swift.Bool = false, isFaceCenterVisible: Swift.Bool = false, isDetectMask: Swift.Bool = false, isClosedEyes: Swift.Bool = false, frontalPassPercentage: Swift.Double = 0.0, faceQualityScore: Swift.Float = 0.0, error: (any Swift.Error)? = nil)
+}
+public class OutputFloat : CoreML.MLFeatureProvider {
+  @objc public var featureNames: Swift.Set<Swift.String> {
+    @objc get
+  }
+  @objc public func featureValue(for featureName: Swift.String) -> CoreML.MLFeatureValue?
+  public init(var_output: CoreML.MLMultiArray)
+  public init(features: any CoreML.MLFeatureProvider)
+  @objc deinit
+}
+public class FaceUtils {
+  public init()
+  public func faceAlignment(image: UIKit.UIImage, faceObjectInfo: (boundingBox: CoreFoundation.CGRect, keyPoints: [CoreFoundation.CGPoint]), padRate: Swift.Float = 0.0) -> UIKit.UIImage?
+  @objc deinit
+}
+public enum ModelEngineErrorStatus : Swift.Error {
+  case moduleFrameworkNotFound
+  case modelFileNotFound
+  case decryptFailed
+  case loadFailed
+  case unknownError
+  public static func == (a: Inferencemodule.ModelEngineErrorStatus, b: Inferencemodule.ModelEngineErrorStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class Input112 : CoreML.MLFeatureProvider {
+  @objc public var featureNames: Swift.Set<Swift.String> {
+    @objc get
+  }
+  @objc public func featureValue(for featureName: Swift.String) -> CoreML.MLFeatureValue?
+  public init(input: CoreVideo.CVPixelBuffer)
+  @objc deinit
+}
+extension Inferencemodule.ModelEngineErrorStatus : Swift.Equatable {}
+extension Inferencemodule.ModelEngineErrorStatus : Swift.Hashable {}

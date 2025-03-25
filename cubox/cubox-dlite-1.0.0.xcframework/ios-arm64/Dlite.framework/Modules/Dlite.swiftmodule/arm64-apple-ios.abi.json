@@ -1,0 +1,4780 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "Dlite",
+    "printedName": "Dlite",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Dlite"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InitializeCompleteListener",
+        "printedName": "InitializeCompleteListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onInitializeComplete",
+            "printedName": "onInitializeComplete(completed:errorStatus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dlite.DliteErrorStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite26InitializeCompleteListenerP02onbC09completed11errorStatusySb_AA0a5ErrorH0OSgtF",
+            "mangledName": "$s5Dlite26InitializeCompleteListenerP02onbC09completed11errorStatusySb_AA0a5ErrorH0OSgtF",
+            "moduleName": "Dlite",
+            "genericSig": "<τ_0_0 where τ_0_0 : Dlite.InitializeCompleteListener>",
+            "sugared_genericSig": "<Self where Self : Dlite.InitializeCompleteListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:5Dlite26InitializeCompleteListenerP",
+        "mangledName": "$s5Dlite26InitializeCompleteListenerP",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DliteSdk",
+        "printedName": "DliteSdk",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "with",
+            "printedName": "with",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DliteSdk",
+                "printedName": "Dlite.DliteSdk",
+                "usr": "s:5Dlite0A3SdkC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A3SdkC4withACvpZ",
+            "mangledName": "$s5Dlite0A3SdkC4withACvpZ",
+            "moduleName": "Dlite",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteSdk",
+                    "printedName": "Dlite.DliteSdk",
+                    "usr": "s:5Dlite0A3SdkC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A3SdkC4withACvgZ",
+                "mangledName": "$s5Dlite0A3SdkC4withACvgZ",
+                "moduleName": "Dlite",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "inference",
+            "printedName": "inference()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExtractFeatureModule",
+                "printedName": "Dlite.ExtractFeatureModule",
+                "usr": "s:5Dlite20ExtractFeatureModuleC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite0A3SdkC9inferenceAA20ExtractFeatureModuleCyFZ",
+            "mangledName": "$s5Dlite0A3SdkC9inferenceAA20ExtractFeatureModuleCyFZ",
+            "moduleName": "Dlite",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "faceApi",
+            "printedName": "faceApi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dlite.FaceUseCaseFactory?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FaceUseCaseFactory",
+                    "printedName": "Dlite.FaceUseCaseFactory",
+                    "usr": "s:5Dlite18FaceUseCaseFactoryC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A3SdkC7faceApiAA18FaceUseCaseFactoryCSgvp",
+            "mangledName": "$s5Dlite0A3SdkC7faceApiAA18FaceUseCaseFactoryCSgvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Dlite.FaceUseCaseFactory?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FaceUseCaseFactory",
+                        "printedName": "Dlite.FaceUseCaseFactory",
+                        "usr": "s:5Dlite18FaceUseCaseFactoryC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A3SdkC7faceApiAA18FaceUseCaseFactoryCSgvg",
+                "mangledName": "$s5Dlite0A3SdkC7faceApiAA18FaceUseCaseFactoryCSgvg",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Dlite.FaceUseCaseFactory?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FaceUseCaseFactory",
+                        "printedName": "Dlite.FaceUseCaseFactory",
+                        "usr": "s:5Dlite18FaceUseCaseFactoryC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A3SdkC7faceApiAA18FaceUseCaseFactoryCSgvs",
+                "mangledName": "$s5Dlite0A3SdkC7faceApiAA18FaceUseCaseFactoryCSgvs",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A3SdkC7faceApiAA18FaceUseCaseFactoryCSgvM",
+                "mangledName": "$s5Dlite0A3SdkC7faceApiAA18FaceUseCaseFactoryCSgvM",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorPublisher",
+            "printedName": "errorPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Dlite.DliteErrorStatus?, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Dlite.DliteErrorStatus?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A3SdkC14errorPublisher7Combine03AnyD0VyAA0A11ErrorStatusOSgs5NeverOGvp",
+            "mangledName": "$s5Dlite0A3SdkC14errorPublisher7Combine03AnyD0VyAA0A11ErrorStatusOSgs5NeverOGvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<Dlite.DliteErrorStatus?, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Dlite.DliteErrorStatus?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DliteErrorStatus",
+                            "printedName": "Dlite.DliteErrorStatus",
+                            "usr": "s:5Dlite0A11ErrorStatusO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A3SdkC14errorPublisher7Combine03AnyD0VyAA0A11ErrorStatusOSgs5NeverOGvg",
+                "mangledName": "$s5Dlite0A3SdkC14errorPublisher7Combine03AnyD0VyAA0A11ErrorStatusOSgs5NeverOGvg",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorStatus",
+            "printedName": "errorStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dlite.DliteErrorStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A3SdkC11errorStatusAA0a5ErrorD0OSgvp",
+            "mangledName": "$s5Dlite0A3SdkC11errorStatusAA0a5ErrorD0OSgvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Dlite.DliteErrorStatus?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A3SdkC11errorStatusAA0a5ErrorD0OSgvg",
+                "mangledName": "$s5Dlite0A3SdkC11errorStatusAA0a5ErrorD0OSgvg",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(option:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DliteOption",
+                "printedName": "Dlite.DliteOption",
+                "usr": "s:5Dlite0A6OptionV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Dlite.DliteErrorStatus?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Dlite.DliteErrorStatus?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Dlite.DliteErrorStatus?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DliteErrorStatus",
+                            "printedName": "Dlite.DliteErrorStatus",
+                            "usr": "s:5Dlite0A11ErrorStatusO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite0A3SdkC10initialize6option10completionyAA0A6OptionV_ySb_AA0A11ErrorStatusOSgtctF",
+            "mangledName": "$s5Dlite0A3SdkC10initialize6option10completionyAA0A6OptionV_ySb_AA0A11ErrorStatusOSgtctF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeLicense",
+            "printedName": "removeLicense()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite0A3SdkC13removeLicenseyyF",
+            "mangledName": "$s5Dlite0A3SdkC13removeLicenseyyF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5Dlite0A3SdkC",
+        "mangledName": "$s5Dlite0A3SdkC",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceUseCaseFactory",
+        "printedName": "FaceUseCaseFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "registerFace",
+            "printedName": "registerFace(image:faceId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<Dlite.RequestResult<Swift.Bool>, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RequestResult",
+                    "printedName": "Dlite.RequestResult<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:5Dlite13RequestResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite18FaceUseCaseFactoryC08registerB05image6faceIds6ResultOyAA07RequestJ0VySbGs5Error_pGSo7UIImageC_SStYaF",
+            "mangledName": "$s5Dlite18FaceUseCaseFactoryC08registerB05image6faceIds6ResultOyAA07RequestJ0VySbGs5Error_pGSo7UIImageC_SStYaF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "faceValidation",
+            "printedName": "faceValidation(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<Dlite.RequestResult<Swift.String>, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RequestResult",
+                    "printedName": "Dlite.RequestResult<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:5Dlite13RequestResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite18FaceUseCaseFactoryC14faceValidation5images6ResultOyAA07RequestI0VySSGs5Error_pGSo7UIImageC_tYaF",
+            "mangledName": "$s5Dlite18FaceUseCaseFactoryC14faceValidation5images6ResultOyAA07RequestI0VySSGs5Error_pGSo7UIImageC_tYaF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteFace",
+            "printedName": "deleteFace(faceId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<Dlite.RequestResult<Swift.Bool>, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RequestResult",
+                    "printedName": "Dlite.RequestResult<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:5Dlite13RequestResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite18FaceUseCaseFactoryC06deleteB06faceIds6ResultOyAA07RequestI0VySbGs5Error_pGSS_tYaF",
+            "mangledName": "$s5Dlite18FaceUseCaseFactoryC06deleteB06faceIds6ResultOyAA07RequestI0VySbGs5Error_pGSS_tYaF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkFaceId",
+            "printedName": "checkFaceId(faceId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<Dlite.RequestResult<Swift.Bool>, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RequestResult",
+                    "printedName": "Dlite.RequestResult<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:5Dlite13RequestResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite18FaceUseCaseFactoryC05checkB2Id04faceG0s6ResultOyAA07RequestI0VySbGs5Error_pGSS_tYaF",
+            "mangledName": "$s5Dlite18FaceUseCaseFactoryC05checkB2Id04faceG0s6ResultOyAA07RequestI0VySbGs5Error_pGSS_tYaF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5Dlite18FaceUseCaseFactoryC",
+        "mangledName": "$s5Dlite18FaceUseCaseFactoryC",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "Dlite"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoSwift",
+        "printedName": "CryptoSwift",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Inferencemodule",
+        "printedName": "Inferencemodule",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Dlite"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExtractFeatureModule",
+        "printedName": "ExtractFeatureModule",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "detectFace",
+            "printedName": "detectFace(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[(CoreFoundation.CGRect, [CoreFoundation.CGPoint])]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[(CoreFoundation.CGRect, [CoreFoundation.CGPoint])]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(CoreFoundation.CGRect, [CoreFoundation.CGPoint])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGRect",
+                            "printedName": "CoreFoundation.CGRect",
+                            "usr": "c:@S@CGRect"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[CoreFoundation.CGPoint]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CGPoint",
+                                "printedName": "CoreFoundation.CGPoint",
+                                "usr": "c:@S@CGPoint"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite20ExtractFeatureModuleC10detectFaceySaySo6CGRectV_SaySo7CGPointVGtGSgSo7UIImageCF",
+            "mangledName": "$s5Dlite20ExtractFeatureModuleC10detectFaceySaySo6CGRectV_SaySo7CGPointVGtGSgSo7UIImageCF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "faceAlignment",
+            "printedName": "faceAlignment(_:faceObjectInfo:padRate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(CoreFoundation.CGRect, [CoreFoundation.CGPoint])",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreFoundation.CGPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGPoint",
+                        "printedName": "CoreFoundation.CGPoint",
+                        "usr": "c:@S@CGPoint"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite20ExtractFeatureModuleC13faceAlignment_0E10ObjectInfo7padRateSo7UIImageCSgAH_So6CGRectV_SaySo7CGPointVGtSftF",
+            "mangledName": "$s5Dlite20ExtractFeatureModuleC13faceAlignment_0E10ObjectInfo7padRateSo7UIImageCSgAH_So6CGRectV_SaySo7CGPointVGtSftF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "extractFeature",
+            "printedName": "extractFeature(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.Float]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite20ExtractFeatureModuleC07extractC0ySaySfGSgSo7UIImageCF",
+            "mangledName": "$s5Dlite20ExtractFeatureModuleC07extractC0ySaySfGSgSo7UIImageCF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5Dlite20ExtractFeatureModuleC",
+        "mangledName": "$s5Dlite20ExtractFeatureModuleC",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogLevel",
+        "printedName": "LogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ALL",
+            "printedName": "ALL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.LogLevel.Type) -> Dlite.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "Dlite.LogLevel",
+                    "usr": "s:5Dlite8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "Dlite.LogLevel",
+                        "usr": "s:5Dlite8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite8LogLevelO3ALLyA2CmF",
+            "mangledName": "$s5Dlite8LogLevelO3ALLyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR",
+            "printedName": "ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.LogLevel.Type) -> Dlite.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "Dlite.LogLevel",
+                    "usr": "s:5Dlite8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "Dlite.LogLevel",
+                        "usr": "s:5Dlite8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite8LogLevelO5ERRORyA2CmF",
+            "mangledName": "$s5Dlite8LogLevelO5ERRORyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "INFO",
+            "printedName": "INFO",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.LogLevel.Type) -> Dlite.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "Dlite.LogLevel",
+                    "usr": "s:5Dlite8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "Dlite.LogLevel",
+                        "usr": "s:5Dlite8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite8LogLevelO4INFOyA2CmF",
+            "mangledName": "$s5Dlite8LogLevelO4INFOyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "NONE",
+            "printedName": "NONE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.LogLevel.Type) -> Dlite.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "Dlite.LogLevel",
+                    "usr": "s:5Dlite8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "Dlite.LogLevel",
+                        "usr": "s:5Dlite8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite8LogLevelO4NONEyA2CmF",
+            "mangledName": "$s5Dlite8LogLevelO4NONEyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "Dlite.LogLevel",
+                "usr": "s:5Dlite8LogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "Dlite.LogLevel",
+                "usr": "s:5Dlite8LogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite8LogLevelO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5Dlite8LogLevelO2eeoiySbAC_ACtFZ",
+            "moduleName": "Dlite",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite8LogLevelO9hashValueSivp",
+            "mangledName": "$s5Dlite8LogLevelO9hashValueSivp",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite8LogLevelO9hashValueSivg",
+                "mangledName": "$s5Dlite8LogLevelO9hashValueSivg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite8LogLevelO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s5Dlite8LogLevelO4hash4intoys6HasherVz_tF",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Dlite8LogLevelO",
+        "mangledName": "$s5Dlite8LogLevelO",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "Dlite"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DliteOption",
+        "printedName": "DliteOption",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "modules",
+            "printedName": "modules",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Dlite.DliteModule]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteModule",
+                    "printedName": "Dlite.DliteModule",
+                    "usr": "s:5Dlite0A6ModuleO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A6OptionV7modulesSayAA0A6ModuleOGvp",
+            "mangledName": "$s5Dlite0A6OptionV7modulesSayAA0A6ModuleOGvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Dlite.DliteModule]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteModule",
+                        "printedName": "Dlite.DliteModule",
+                        "usr": "s:5Dlite0A6ModuleO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A6OptionV7modulesSayAA0A6ModuleOGvg",
+                "mangledName": "$s5Dlite0A6OptionV7modulesSayAA0A6ModuleOGvg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceRecognitionBaseUrl",
+            "printedName": "faceRecognitionBaseUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A6OptionV22faceRecognitionBaseUrlSSvp",
+            "mangledName": "$s5Dlite0A6OptionV22faceRecognitionBaseUrlSSvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A6OptionV22faceRecognitionBaseUrlSSvg",
+                "mangledName": "$s5Dlite0A6OptionV22faceRecognitionBaseUrlSSvg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "livenessBaseUrl",
+            "printedName": "livenessBaseUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A6OptionV15livenessBaseUrlSSvp",
+            "mangledName": "$s5Dlite0A6OptionV15livenessBaseUrlSSvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A6OptionV15livenessBaseUrlSSvg",
+                "mangledName": "$s5Dlite0A6OptionV15livenessBaseUrlSSvg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "siteCode",
+            "printedName": "siteCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A6OptionV8siteCodeSSvp",
+            "mangledName": "$s5Dlite0A6OptionV8siteCodeSSvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A6OptionV8siteCodeSSvg",
+                "mangledName": "$s5Dlite0A6OptionV8siteCodeSSvg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "licenseKey",
+            "printedName": "licenseKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A6OptionV10licenseKeySSSgvp",
+            "mangledName": "$s5Dlite0A6OptionV10licenseKeySSSgvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A6OptionV10licenseKeySSSgvg",
+                "mangledName": "$s5Dlite0A6OptionV10licenseKeySSSgvg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logLevel",
+            "printedName": "logLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "Dlite.LogLevel",
+                "usr": "s:5Dlite8LogLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A6OptionV8logLevelAA03LogD0Ovp",
+            "mangledName": "$s5Dlite0A6OptionV8logLevelAA03LogD0Ovp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "Dlite.LogLevel",
+                    "usr": "s:5Dlite8LogLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A6OptionV8logLevelAA03LogD0Ovg",
+                "mangledName": "$s5Dlite0A6OptionV8logLevelAA03LogD0Ovg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Builder",
+            "printedName": "Builder",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "Dlite.DliteOption.Builder",
+                    "usr": "s:5Dlite0A6OptionV7BuilderV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:5Dlite0A6OptionV7BuilderVAEycfc",
+                "mangledName": "$s5Dlite0A6OptionV7BuilderVAEycfc",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "setFaceRecognitionBaseUrl",
+                "printedName": "setFaceRecognitionBaseUrl(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "Dlite.DliteOption.Builder",
+                    "usr": "s:5Dlite0A6OptionV7BuilderV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:5Dlite0A6OptionV7BuilderV25setFaceRecognitionBaseUrlyAESSF",
+                "mangledName": "$s5Dlite0A6OptionV7BuilderV25setFaceRecognitionBaseUrlyAESSF",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setLivenessBaseUrl",
+                "printedName": "setLivenessBaseUrl(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "Dlite.DliteOption.Builder",
+                    "usr": "s:5Dlite0A6OptionV7BuilderV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:5Dlite0A6OptionV7BuilderV18setLivenessBaseUrlyAESSF",
+                "mangledName": "$s5Dlite0A6OptionV7BuilderV18setLivenessBaseUrlyAESSF",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setModules",
+                "printedName": "setModules(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "Dlite.DliteOption.Builder",
+                    "usr": "s:5Dlite0A6OptionV7BuilderV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Dlite.DliteModule]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteModule",
+                        "printedName": "Dlite.DliteModule",
+                        "usr": "s:5Dlite0A6ModuleO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:5Dlite0A6OptionV7BuilderV10setModulesyAeA0A6ModuleOd_tF",
+                "mangledName": "$s5Dlite0A6OptionV7BuilderV10setModulesyAeA0A6ModuleOd_tF",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setLicenseKey",
+                "printedName": "setLicenseKey(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "Dlite.DliteOption.Builder",
+                    "usr": "s:5Dlite0A6OptionV7BuilderV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:5Dlite0A6OptionV7BuilderV13setLicenseKeyyAESSF",
+                "mangledName": "$s5Dlite0A6OptionV7BuilderV13setLicenseKeyyAESSF",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setSiteCode",
+                "printedName": "setSiteCode(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "Dlite.DliteOption.Builder",
+                    "usr": "s:5Dlite0A6OptionV7BuilderV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:5Dlite0A6OptionV7BuilderV11setSiteCodeyAESSF",
+                "mangledName": "$s5Dlite0A6OptionV7BuilderV11setSiteCodeyAESSF",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "build",
+                "printedName": "build()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteOption",
+                    "printedName": "Dlite.DliteOption",
+                    "usr": "s:5Dlite0A6OptionV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:5Dlite0A6OptionV7BuilderV5buildACyF",
+                "mangledName": "$s5Dlite0A6OptionV7BuilderV5buildACyF",
+                "moduleName": "Dlite",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:5Dlite0A6OptionV7BuilderV",
+            "mangledName": "$s5Dlite0A6OptionV7BuilderV",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5Dlite0A6OptionV",
+        "mangledName": "$s5Dlite0A6OptionV",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DliteRequestErrorStatus",
+        "printedName": "DliteRequestErrorStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "CATCH_EXCEPTION",
+            "printedName": "CATCH_EXCEPTION",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO15CATCH_EXCEPTIONyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO15CATCH_EXCEPTIONyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "UNKNOWN_ERROR",
+            "printedName": "UNKNOWN_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO13UNKNOWN_ERRORyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO13UNKNOWN_ERRORyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "API_REQUEST_FAILED",
+            "printedName": "API_REQUEST_FAILED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO18API_REQUEST_FAILEDyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO18API_REQUEST_FAILEDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "API_RESULT_NOT_SUCCEEDED",
+            "printedName": "API_RESULT_NOT_SUCCEEDED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO24API_RESULT_NOT_SUCCEEDEDyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO24API_RESULT_NOT_SUCCEEDEDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "PERMISSION_DENIED",
+            "printedName": "PERMISSION_DENIED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO17PERMISSION_DENIEDyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO17PERMISSION_DENIEDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LICENSE_EXPIRED",
+            "printedName": "LICENSE_EXPIRED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO15LICENSE_EXPIREDyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO15LICENSE_EXPIREDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DLITE_INITAILIZE_FAILED",
+            "printedName": "DLITE_INITAILIZE_FAILED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO23DLITE_INITAILIZE_FAILEDyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO23DLITE_INITAILIZE_FAILEDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "FEATURES_CURRENTLY_NOT_SUPPORTED",
+            "printedName": "FEATURES_CURRENTLY_NOT_SUPPORTED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO32FEATURES_CURRENTLY_NOT_SUPPORTEDyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO32FEATURES_CURRENTLY_NOT_SUPPORTEDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "INVALID_ACTIVITY",
+            "printedName": "INVALID_ACTIVITY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO16INVALID_ACTIVITYyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO16INVALID_ACTIVITYyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "USER_CANCELLED",
+            "printedName": "USER_CANCELLED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO14USER_CANCELLEDyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO14USER_CANCELLEDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "FACE_API_NOT_INITIALIZE",
+            "printedName": "FACE_API_NOT_INITIALIZE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO23FACE_API_NOT_INITIALIZEyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO23FACE_API_NOT_INITIALIZEyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "INVALID_FEATURE_ERROR",
+            "printedName": "INVALID_FEATURE_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO21INVALID_FEATURE_ERRORyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO21INVALID_FEATURE_ERRORyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "INVALID_API_KEY",
+            "printedName": "INVALID_API_KEY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO15INVALID_API_KEYyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO15INVALID_API_KEYyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "SERVER_DB_ERROR",
+            "printedName": "SERVER_DB_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO15SERVER_DB_ERRORyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO15SERVER_DB_ERRORyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LIVENESS_FAILED_FACE_NOT_FOUND",
+            "printedName": "LIVENESS_FAILED_FACE_NOT_FOUND",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO30LIVENESS_FAILED_FACE_NOT_FOUNDyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO30LIVENESS_FAILED_FACE_NOT_FOUNDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LIVENESS_FAILED_DETECT_MULTIPLE_FACES",
+            "printedName": "LIVENESS_FAILED_DETECT_MULTIPLE_FACES",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO37LIVENESS_FAILED_DETECT_MULTIPLE_FACESyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO37LIVENESS_FAILED_DETECT_MULTIPLE_FACESyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LIVENESS_FAILED_NO_ACTION",
+            "printedName": "LIVENESS_FAILED_NO_ACTION",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO25LIVENESS_FAILED_NO_ACTIONyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO25LIVENESS_FAILED_NO_ACTIONyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LIVENESS_FAILED_DETECT_MASK",
+            "printedName": "LIVENESS_FAILED_DETECT_MASK",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO27LIVENESS_FAILED_DETECT_MASKyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO27LIVENESS_FAILED_DETECT_MASKyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LIVENESS_FAILED_FRONTAL",
+            "printedName": "LIVENESS_FAILED_FRONTAL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO23LIVENESS_FAILED_FRONTALyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO23LIVENESS_FAILED_FRONTALyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LIVENESS_SERVER_ERROR",
+            "printedName": "LIVENESS_SERVER_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteRequestErrorStatus.Type) -> Dlite.DliteRequestErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteRequestErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteRequestErrorStatus",
+                        "printedName": "Dlite.DliteRequestErrorStatus",
+                        "usr": "s:5Dlite0A18RequestErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A18RequestErrorStatusO21LIVENESS_SERVER_ERRORyA2CmF",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO21LIVENESS_SERVER_ERRORyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dlite.DliteRequestErrorStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteRequestErrorStatus",
+                    "printedName": "Dlite.DliteRequestErrorStatus",
+                    "usr": "s:5Dlite0A18RequestErrorStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Dlite0A18RequestErrorStatusO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO8rawValueACSgSS_tcfc",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A18RequestErrorStatusO8rawValueSSvp",
+            "mangledName": "$s5Dlite0A18RequestErrorStatusO8rawValueSSvp",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A18RequestErrorStatusO8rawValueSSvg",
+                "mangledName": "$s5Dlite0A18RequestErrorStatusO8rawValueSSvg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Dlite0A18RequestErrorStatusO",
+        "mangledName": "$s5Dlite0A18RequestErrorStatusO",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InferenceModel",
+        "printedName": "InferenceModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "FACE_EXTRACTION",
+            "printedName": "FACE_EXTRACTION",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.InferenceModel.Type) -> Dlite.InferenceModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InferenceModel",
+                    "printedName": "Dlite.InferenceModel",
+                    "usr": "s:5Dlite14InferenceModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.InferenceModel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InferenceModel",
+                        "printedName": "Dlite.InferenceModel",
+                        "usr": "s:5Dlite14InferenceModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite14InferenceModelO15FACE_EXTRACTIONyA2CmF",
+            "mangledName": "$s5Dlite14InferenceModelO15FACE_EXTRACTIONyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dlite.InferenceModel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InferenceModel",
+                    "printedName": "Dlite.InferenceModel",
+                    "usr": "s:5Dlite14InferenceModelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Dlite14InferenceModelO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5Dlite14InferenceModelO8rawValueACSgSS_tcfc",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite14InferenceModelO8rawValueSSvp",
+            "mangledName": "$s5Dlite14InferenceModelO8rawValueSSvp",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite14InferenceModelO8rawValueSSvg",
+                "mangledName": "$s5Dlite14InferenceModelO8rawValueSSvg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Dlite.InferenceModel]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InferenceModel",
+                    "printedName": "Dlite.InferenceModel",
+                    "usr": "s:5Dlite14InferenceModelO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite14InferenceModelO8allCasesSayACGvpZ",
+            "mangledName": "$s5Dlite14InferenceModelO8allCasesSayACGvpZ",
+            "moduleName": "Dlite",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Dlite.InferenceModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InferenceModel",
+                        "printedName": "Dlite.InferenceModel",
+                        "usr": "s:5Dlite14InferenceModelO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite14InferenceModelO8allCasesSayACGvgZ",
+                "mangledName": "$s5Dlite14InferenceModelO8allCasesSayACGvgZ",
+                "moduleName": "Dlite",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Dlite14InferenceModelO",
+        "mangledName": "$s5Dlite14InferenceModelO",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Dlite.InferenceModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InferenceModel",
+                        "printedName": "Dlite.InferenceModel",
+                        "usr": "s:5Dlite14InferenceModelO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DliteErrorStatus",
+        "printedName": "DliteErrorStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "INVALID_API_KEY",
+            "printedName": "INVALID_API_KEY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO15INVALID_API_KEYyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO15INVALID_API_KEYyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "INFERENCE_MODULE_NOT_INCLUDED",
+            "printedName": "INFERENCE_MODULE_NOT_INCLUDED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO29INFERENCE_MODULE_NOT_INCLUDEDyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO29INFERENCE_MODULE_NOT_INCLUDEDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CAMERA_MODULE_NOT_INCLUDED",
+            "printedName": "CAMERA_MODULE_NOT_INCLUDED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO26CAMERA_MODULE_NOT_INCLUDEDyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO26CAMERA_MODULE_NOT_INCLUDEDyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "LICENSE_NEED_DOWNLOAD",
+            "printedName": "LICENSE_NEED_DOWNLOAD",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO21LICENSE_NEED_DOWNLOADyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO21LICENSE_NEED_DOWNLOADyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LICENSE_KEY_ERROR",
+            "printedName": "LICENSE_KEY_ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO17LICENSE_KEY_ERRORyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO17LICENSE_KEY_ERRORyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "LICENSE_EXPIRED",
+            "printedName": "LICENSE_EXPIRED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO15LICENSE_EXPIREDyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO15LICENSE_EXPIREDyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "LICENSE_DOWNLOAD_FAILED",
+            "printedName": "LICENSE_DOWNLOAD_FAILED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO23LICENSE_DOWNLOAD_FAILEDyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO23LICENSE_DOWNLOAD_FAILEDyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "LICENSE_REFRESHED_FAILED",
+            "printedName": "LICENSE_REFRESHED_FAILED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO24LICENSE_REFRESHED_FAILEDyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO24LICENSE_REFRESHED_FAILEDyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "LICENSE_API_FAILED",
+            "printedName": "LICENSE_API_FAILED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO18LICENSE_API_FAILEDyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO18LICENSE_API_FAILEDyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "LICENSE_SAVE_FAILED",
+            "printedName": "LICENSE_SAVE_FAILED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO19LICENSE_SAVE_FAILEDyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO19LICENSE_SAVE_FAILEDyA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Var",
+            "name": "MODEL_DOWNLOAD_SAVE_FAILED",
+            "printedName": "MODEL_DOWNLOAD_SAVE_FAILED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO26MODEL_DOWNLOAD_SAVE_FAILEDyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO26MODEL_DOWNLOAD_SAVE_FAILEDyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "UNKNOWN_EXCEPTION",
+            "printedName": "UNKNOWN_EXCEPTION",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteErrorStatus.Type) -> Dlite.DliteErrorStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteErrorStatus",
+                    "printedName": "Dlite.DliteErrorStatus",
+                    "usr": "s:5Dlite0A11ErrorStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteErrorStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteErrorStatus",
+                        "printedName": "Dlite.DliteErrorStatus",
+                        "usr": "s:5Dlite0A11ErrorStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A11ErrorStatusO17UNKNOWN_EXCEPTIONyA2CmF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO17UNKNOWN_EXCEPTIONyA2CmF",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DliteErrorStatus",
+                "printedName": "Dlite.DliteErrorStatus",
+                "usr": "s:5Dlite0A11ErrorStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DliteErrorStatus",
+                "printedName": "Dlite.DliteErrorStatus",
+                "usr": "s:5Dlite0A11ErrorStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite0A11ErrorStatusO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5Dlite0A11ErrorStatusO2eeoiySbAC_ACtFZ",
+            "moduleName": "Dlite",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A11ErrorStatusO9hashValueSivp",
+            "mangledName": "$s5Dlite0A11ErrorStatusO9hashValueSivp",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A11ErrorStatusO9hashValueSivg",
+                "mangledName": "$s5Dlite0A11ErrorStatusO9hashValueSivg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Dlite0A11ErrorStatusO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s5Dlite0A11ErrorStatusO4hash4intoys6HasherVz_tF",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Dlite0A11ErrorStatusO",
+        "mangledName": "$s5Dlite0A11ErrorStatusO",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DliteModule",
+        "printedName": "DliteModule",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "inferenceModule",
+            "printedName": "inferenceModule",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Dlite.DliteModule.Type) -> Dlite.DliteModule",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteModule",
+                    "printedName": "Dlite.DliteModule",
+                    "usr": "s:5Dlite0A6ModuleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Dlite.DliteModule.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DliteModule",
+                        "printedName": "Dlite.DliteModule",
+                        "usr": "s:5Dlite0A6ModuleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5Dlite0A6ModuleO09inferenceB0yA2CmF",
+            "mangledName": "$s5Dlite0A6ModuleO09inferenceB0yA2CmF",
+            "moduleName": "Dlite"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dlite.DliteModule?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DliteModule",
+                    "printedName": "Dlite.DliteModule",
+                    "usr": "s:5Dlite0A6ModuleO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Dlite0A6ModuleO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5Dlite0A6ModuleO8rawValueACSgSS_tcfc",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite0A6ModuleO8rawValueSSvp",
+            "mangledName": "$s5Dlite0A6ModuleO8rawValueSSvp",
+            "moduleName": "Dlite",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite0A6ModuleO8rawValueSSvg",
+                "mangledName": "$s5Dlite0A6ModuleO8rawValueSSvg",
+                "moduleName": "Dlite",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5Dlite0A6ModuleO",
+        "mangledName": "$s5Dlite0A6ModuleO",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Dlite",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RequestResult",
+        "printedName": "RequestResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite13RequestResultV4dataxSgvp",
+            "mangledName": "$s5Dlite13RequestResultV4dataxSgvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite13RequestResultV4dataxSgvg",
+                "mangledName": "$s5Dlite13RequestResultV4dataxSgvg",
+                "moduleName": "Dlite",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite13RequestResultV7messageSSvp",
+            "mangledName": "$s5Dlite13RequestResultV7messageSSvp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite13RequestResultV7messageSSvg",
+                "mangledName": "$s5Dlite13RequestResultV7messageSSvg",
+                "moduleName": "Dlite",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statusCode",
+            "printedName": "statusCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Dlite13RequestResultV10statusCodeSivp",
+            "mangledName": "$s5Dlite13RequestResultV10statusCodeSivp",
+            "moduleName": "Dlite",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Dlite13RequestResultV10statusCodeSivg",
+                "mangledName": "$s5Dlite13RequestResultV10statusCodeSivg",
+                "moduleName": "Dlite",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5Dlite13RequestResultV",
+        "mangledName": "$s5Dlite13RequestResultV",
+        "moduleName": "Dlite",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/BuildConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 23,
+      "value": "\"INCLUDE_TENSOR_MODULE\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/BuildConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 254,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/BuildConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 367,
+      "length": 24,
+      "value": "\"INCLUDE_FRS_API_MODULE\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/BuildConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 405,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/Dlite.swift",
+      "kind": "StringLiteral",
+      "offset": 559,
+      "length": 23,
+      "value": "\"com.dlite.moduleQueue\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/Dlite.swift",
+      "kind": "StringLiteral",
+      "offset": 643,
+      "length": 31,
+      "value": "\"com.dlite.initializationQueue\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/DliteModuleManager.swift",
+      "kind": "Dictionary",
+      "offset": 227,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/DliteModuleManager.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 25,
+      "value": "\"com.dlite.moduleManager\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/logger\/LogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 423,
+      "length": 17,
+      "value": "\"com.cubox.dlite\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/logger\/LogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 7,
+      "value": "\"DLite\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/data\/util\/Encryptor.swift",
+      "kind": "StringLiteral",
+      "offset": 160,
+      "length": 18,
+      "value": "\"dev0frs123cubox4\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/data\/util\/Encryptor.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 34,
+      "value": "\"A?C(H+MbQe1324Yq3t6w9z&C&F)J@NcR\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/external_modules\/ExtractFeatureModule.swift",
+      "kind": "FloatLiteral",
+      "offset": 725,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/domain\/model\/LivenessRequestEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 164,
+      "length": 4,
+      "value": "\"MN\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/domain\/model\/LivenessRequestEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 195,
+      "length": 9,
+      "value": "\"userKey\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/domain\/model\/LivenessRequestEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 8,
+      "value": "\"userNm\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/domain\/model\/LivenessRequestEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 268,
+      "length": 5,
+      "value": "\"123\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/domain\/model\/LivenessRequestEntity.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/DliteOption.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
+      "length": 28,
+      "value": "\"http:\/\/13.125.141.15:5000\/\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/DliteOption.swift",
+      "kind": "StringLiteral",
+      "offset": 572,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/DliteOption.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/factory\/LivenessUseCaseFactory.swift",
+      "kind": "StringLiteral",
+      "offset": 331,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/data\/model\/InferenceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 270,
+      "length": 7,
+      "value": "\"fr-03\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 153,
+      "length": 7,
+      "value": "\"Dlite\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 38,
+      "value": "\"cubox-afejoafea1230feiwaofeawfeaffaw\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/Constants.swift",
+      "kind": "BooleanLiteral",
+      "offset": 489,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 597,
+      "length": 13,
+      "value": "1743519599000"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/Constants.swift",
+      "kind": "Array",
+      "offset": 683,
+      "length": 280,
+      "value": "[\"analytics\/coremldata.bin\", \"model\/coremldata.bin\", \"neural_network_optionals\/coremldata.bin\", \"coremldata.bin\", \"metadata.json\", \"enc_model.espresso.net\", \"model.espresso.shape\", \"enc_model.espresso.weights\"]"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/Constants.swift",
+      "kind": "Array",
+      "offset": 1020,
+      "length": 80,
+      "value": "[\"analytics\", \"model\", \"neural_network_optionals\"]"
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1146,
+      "length": 10,
+      "value": "\"mlmodelc\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/common\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1227,
+      "length": 38,
+      "value": "\"CUFRSPRO-D01B-C23D-45EF-6G7H89I0123J\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/data\/source\/remote\/network\/api\/LivenessApi.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/data\/source\/remote\/network\/api\/FaceApi.swift",
+      "kind": "StringLiteral",
+      "offset": 443,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/core\/DliteModule.swift",
+      "kind": "StringLiteral",
+      "offset": 156,
+      "length": 18,
+      "value": "\"INFERENCE_MODULE\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/data\/model\/Response.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/cubox\/Desktop\/newSDK\/CuSdk-iOS\/dlite\/dlite\/data\/model\/Response.swift",
+      "kind": "IntegerLiteral",
+      "offset": 305,
+      "length": 3,
+      "value": "200"
+    }
+  ]
+}
