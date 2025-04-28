@@ -22,30 +22,13 @@ In the example app, we propose the following three features.
 <br/>
 
 
-## Before getting started. 
-### SDK Requirements.
-
-The minimum requirements for UIKit for iOS are:
-
-- iOS 15+
-- Swift 5.0+
-- Xcode 16.1(16B40)
-
-<br/>
-
-#### The Dlite SDK is divided into three modules:
-- cubox-camera-{version}.xcframework : Handles the camera UI components.
-- cubox-dlite-{version}.xcframework : Manages the SDK's licensing and core functionalities.
-- cubox-inference-{version}.xcframework : Responsible for deep learning inference tasks.
-
-<br/>
-
-
-#### 
+## How to use
+- [How to use iOS SDK](./iOS.md)  
 
 
 
 <br/>
+
 ## If you'd like to use our SDK
 Please get in touch with our operations team to proceed to the next steps. <br/>
 You can reach us at devTeam@cubox.ai <br/> 
