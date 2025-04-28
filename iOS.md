@@ -1,5 +1,5 @@
 ## iOS SDK
-Last modified: 2025.04.22 
+Last modified: 2025.04.28
 
 <br/> <br/>
 
@@ -16,20 +16,20 @@ The minimum requirements for UIKit for iOS are:
 
 <br/> <br/>
 
-## SDK 설정
+## SDK Setup
 
-1. 세 가지의 라이브러리 .xcframework 파일을 Frameworks, Libraries, and Embedded Content에 추가해 주세요.
+1.	Add the three .xcframework files to Frameworks, Libraries, and Embedded Content.
 ![이미지](https://ekyc-idis-dev.cuboxservice.com:3001/images/9982581511683789e2f018c-09a9-4b65-9438-bb40846a957c)
 
 <br/> <br/>
 
-2. Dlite Core Module은 Alamofire을 사용합니다.  Dynamic 형태인 AlamofireDynamic을 추가해주세요.
+2.	The Dlite Core Module uses Alamofire. Please add the dynamic version, AlamofireDynamic.
 ![이미지](https://ekyc-idis-dev.cuboxservice.com:3001/images/9982581510605110ea0eb3d-7670-47b5-98dd-40def15470c9)
 
 <br/> <br/>
 
 
-## SDK 초기화
+## SDK Initialization
 1. <span style="color:red; font-weight:bold;">[!] You must provide a license key in setLicenseKey during initialization.</span>
 
 ```swift
