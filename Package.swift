@@ -28,20 +28,20 @@ let inferenceChecksum = "6d8dc2449c9e44d8641967588026671d5ed8ff12bfb09b620980fe4
 #endif
 
 let package = Package(
-    name: "dlite-sdk-sample-ios",
+    name: "DliteSDK",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
             name: "Cameramodule",
-            targets: ["Cameramodule"]),
+            targets: ["Cameramodule", "Dlite"]),
         .library(
             name: "Inferencemodule",
             targets: ["Inferencemodule"]),
         .library(
             name: "Dlite",
-            targets: ["Dlite"])
+            targets: ["Dlite", "Inferencemodule"])
     ],
     targets: [
         // 타겟의 'name'은 동일하게 유지하고, URL과 체크섬만 변수를 사용해 설정합니다.
