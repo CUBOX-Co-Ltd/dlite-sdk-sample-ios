@@ -1,6 +1,0 @@
-framework module Inferencemodule {
-  umbrella header "inferencemodule.h"
-  export *
-
-  module * { export * }
-}
